@@ -56,7 +56,7 @@ function generarTabla(datos) {
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Página cargada");
 
-  const delay = 50; // Tiempo de espera en milisegundos (ajústalo según sea necesario)
+  const delay = 200; // Tiempo de espera en milisegundos (ajústalo según sea necesario)
 
   const checkHashAndShowTable = () => {
     setTimeout(() => {
