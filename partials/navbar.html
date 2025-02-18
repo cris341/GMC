@@ -1,0 +1,199 @@
+<nav
+  class="flex md:justify-center md:items-center text-white py-2"
+  style="background-color: #eb1e00"
+>
+  <ul class="hidden md:flex mx-2 md:mx-36 lg:mx-64 xl:mx-64 2xl:mx-64">
+    <li
+      class="text-center border-l border-r border-white p-2 whitespace-nowrap xl:px-4 2xl:px-4 hover:text-black"
+    >
+      <a href="https://www.univalle.edu.co/">Inicio</a>
+    </li>
+    <li
+      class="text-center border-r border-white p-2 whitespace-nowrap xl:px-4 2xl:px-4 hover:text-black"
+    >
+      <a
+        href="https://www.univalle.edu.co/la-universidad/acerca-de-univalle/mision"
+        >La universidad</a
+      >
+    </li>
+    <li
+      class="text-center border-r border-white p-2 whitespace-nowrap xl:px-4 2xl:px-4 hover:text-black"
+    >
+      <a href="https://www.univalle.edu.co/formacion/pregrado"
+        >Estudia en Univalle</a
+      >
+    </li>
+    <li
+      class="text-center border-r border-white p-2 whitespace-nowrap xl:px-4 2xl:px-4 hover:text-black"
+    >
+      <a href="https://viceinvestigaciones.univalle.edu.co/">Investigación</a>
+    </li>
+    <li
+      class="text-center border-r border-white p-2 whitespace-nowrap xl:px-4 2xl:px-4 hover:text-black"
+    >
+      <a href="https://dri.univalle.edu.co/es/">Internacionalización</a>
+    </li>
+    <li
+      class="text-center border-r border-white p-2 whitespace-nowrap xl:px-4 2xl:px-4 hover:text-black"
+    >
+      <a href="https://extension.univalle.edu.co/"
+        >Extensión y Proyección Social</a
+      >
+    </li>
+    <li
+      class="text-center border-r border-white p-2 whitespace-nowrap xl:px-4 2xl:px-4 hover:text-black"
+    >
+      <a href="https://regionalizacion.univalle.edu.co/">Sedes Regionales</a>
+    </li>
+    <li
+      class="text-center border-r border-white p-2 whitespace-nowrap xl:px-4 2xl:px-4 hover:text-black"
+    >
+      <a href="https://campusvirtual.univalle.edu.co/moodle/">Campus Virtual</a>
+    </li>
+  </ul>
+
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 bg-gray-200 bg-opacity-90 flex flex-col w-1/2 hidden md:hidden z-50"
+  >
+    <div class="pl-10 flex justify-between bg-gray-300 items-center">
+      <p class="text-red-500 text-center font-bold">Menu Principal</p>
+      <div class="cursor-pointer" onclick="menuToggle(false)">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8 text-black"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="mt-12">
+      <div class="text-black text-lg font-bold text-center">
+        <p>Nosotros</p>
+      </div>
+      <div class="text-black">
+        <ul>
+          <li
+            class="flex text-red-500 cursor-pointer hover:text-red-700 hover:bg-gray-300 mx-2 p-2"
+            onclick="cambiarhash('home')"
+          >
+            <p class="nav-link ml-2 text-black hover:text-red-700">Inicio</p>
+          </li>
+          <li
+            class="flex text-red-500 cursor-pointer hover:text-red-700 hover:bg-gray-300 mx-2 p-2"
+            onclick="cambiarhash('group')"
+          >
+            <p class="nav-link ml-2 text-black hover:text-red-700">
+              Acerca del grupo
+            </p>
+          </li>
+          <li
+            class="flex text-red-500 cursor-pointer hover:text-red-700 hover:bg-gray-300 mx-2 p-2"
+            onclick="cambiarhash('research')"
+          >
+            <p class="nav-link ml-2 text-black hover:text-red-700">
+              Linea de investigacion
+            </p>
+          </li>
+          <li
+            class="flex text-red-500 cursor-pointer hover:text-red-700 hover:bg-gray-300 mx-2 p-2"
+            onclick="cambiarhash('members')"
+          >
+            <p class="nav-link ml-2 text-black hover:text-red-700">
+              Integrantes
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-6">
+      <div class="text-black text-lg font-bold text-center">
+        <p>Proyectos y laboratorio</p>
+      </div>
+      <div class="text-black">
+        <ul>
+          <li
+            class="flex text-red-500 cursor-pointer hover:text-red-700 hover:bg-gray-300 mx-2 p-2"
+            onclick="cambiarhash('proyects')"
+          >
+            <p class="nav-link ml-2 text-black hover:text-red-700">Proyectos</p>
+          </li>
+          <li
+            class="flex text-red-500 cursor-pointer hover:text-red-700 hover:bg-gray-300 mx-2 p-2"
+            onclick="cambiarhash('laboratories')"
+          >
+            <p class="nav-link ml-2 text-black hover:text-red-700">
+              Laboratorios
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <button
+    id="menuToggle"
+    class="md:hidden block text-white focus:outline-none mx-6"
+    aria-label="Abrir menú"
+    onclick="menuToggle(true)"
+  >
+    <svg
+      class="w-8 h-8"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16m-7 6h7"
+      ></path>
+    </svg>
+  </button>
+</nav>
+
+<!-- Menú móvil -->
+<div
+  id="mobile-menu"
+  class="hidden md:hidden flex flex-col space-y-2 bg-red-600 p-4"
+>
+  <a href="https://www.univalle.edu.co/" class="hover:text-black">Inicio</a>
+  <a
+    href="https://www.univalle.edu.co/la-universidad/acerca-de-univalle/mision"
+    class="hover:text-black"
+    >La universidad</a
+  >
+  <a
+    href="https://www.univalle.edu.co/formacion/pregrado"
+    class="hover:text-black"
+    >Estudia en Univalle</a
+  >
+  <a
+    href="https://viceinvestigaciones.univalle.edu.co/"
+    class="hover:text-black"
+    >Investigación</a
+  >
+  <a href="https://dri.univalle.edu.co/es/" class="hover:text-black"
+    >Internacionalización</a
+  >
+  <a href="https://extension.univalle.edu.co/" class="hover:text-black"
+    >Extensión y Proyección Social</a
+  >
+  <a href="https://regionalizacion.univalle.edu.co/" class="hover:text-black"
+    >Sedes Regionales</a
+  >
+  <a
+    href="https://campusvirtual.univalle.edu.co/moodle/"
+    class="hover:text-black"
+    >Campus Virtual</a
+  >
+</div>

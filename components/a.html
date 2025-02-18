@@ -1,0 +1,682 @@
+<div class="container mx-auto py-2" onclick="toggleMenu(this)">
+    <div
+        class="w-full mb-4 bg-gray-200 border border-gray-300 hover:bg-gray-300 hover:border-yellow-200 cursor-pointer">
+        <h2 class="text-red-700 text-center text-lg font-bold">
+            Transformación de Materiales
+        </h2>
+    </div>
+    <div class=" relative overflow-hidden" onclick="event.stopPropagation()">
+
+        <div id="menu" class="hidden transition-all duration-500 ease-in-out overflow-hidden">
+            <!-- Carrusel Contenedor -->
+            <div id="carousel-1" class="flex w-full transition-transform duration-500">
+                <!-- Slide 1 -->
+                <div class="carousel-item-1 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/trasformacion_materiales/horno.jpg" width="169"
+                                height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Hornos:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - Horno MTI modelo KSL1600X (temperatura máx. 1600°C)
+                                </p>
+                                <p>
+                                    - 2 Hornos de 64L (temperatura máx. 1200°C)
+
+                                </p>
+                                <p>
+                                    - 2 Hornos de 8L (temperatura máx. 1200°C)
+
+                                </p>
+                                <p>
+                                    - 1 Horno de 28L (temperatura máx. de 1200°C)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item-1 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/trasformacion_materiales/molino_bolas.jpg" width="169"
+                                height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Molinos de Bolas:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - 2 Molino de bolas con cuerpos moledores cilíndricos de alúmina, esféricos de
+                                    acero
+                                    y alúmina</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item-1 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/trasformacion_materiales/molino_atricion.jpg" width="169"
+                                height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Molino de atrición:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - HD Lab Attritor de Union Process
+                                </p>
+                                <p>
+                                    - Cuerpos Moledores cilíndricos de alúmina y acero inoxidable
+                                </p>
+                                <p>
+                                    - Capacidad: 1400ml
+                                </p>
+                                <p>
+                                    - Revoluciones por minuto graduables (1000-4200)
+                                </p>
+                                <p>
+                                    - Sistema de enfriamiento con agua
+                                </p>
+                                <p>
+                                    - Realización de moliendas en húmedo o en seco
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item-1 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/trasformacion_materiales/Molino_discos.jpg" width="169"
+                                height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Molino de anillos:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - Retsch modelo RS200
+                                </p>
+                                <p>
+                                    - Capacidad 35-150ml
+                                </p>
+                                <p>
+                                    - Molienda de materiales por fricción-presión
+                                </p>
+                                <p>
+                                    - Tamaño de partícula < 40µm </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Botones de Navegación -->
+        <button onclick="updateCarousel('prevBtn','1')" id="prevBtn"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟨</button>
+        <button onclick="updateCarousel('nextBtn','1')" id="nextBtn"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟩</button>
+    </div>
+</div>
+
+<div class="container mx-auto py-2  " onclick="toggleMenu(this)">
+    <div
+        class="w-full mb-4 bg-gray-200 border border-gray-300 hover:bg-gray-300 hover:border-yellow-200 cursor-pointer">
+        <h2 class="text-red-700 text-center text-lg font-bold">
+            Caracterización Físico-mecánica y Microestructural de Materiales
+        </h2>
+    </div>
+    <div class=" relative overflow-hidden" onclick="event.stopPropagation()">
+        <div id="menu" class="hidden transition-all duration-500 ease-in-out overflow-hidden">
+
+
+            <!-- Carrusel Contenedor -->
+            <div id="carousel-2" class="flex w-full transition-transform duration-500">
+                <!-- Slide 1 -->
+                <div class="carousel-item-2 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center items-center">
+                            <img src="/img/laboratorios/Caracterización Físico-mecánica y Microestructural de Materiales/Prensa.jpg"
+                                width="259" height="259" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Prensa Universal de Ensayos Mecánicos*:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - Prensa hidráulica de E.L.E. International de dos canales con una capacidad
+                                    máx. de
+                                    carga de 1000 kN y 2000 kN.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item-2 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/Caracterización Físico-mecánica y Microestructural de Materiales/Prensa_Instron.jfif"
+                                width="169" height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Prensa Universal de Ensayos Mecánicos
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - Prensa Instron modelo 1330
+                                </p>
+                                <p>
+                                    - Capacidad máxima de carga: 100kN
+                                </p>
+                                <p>
+                                    - Accesorios para ensayos de flexión, compresión y tracción
+                                </p>
+                                <p>
+                                    - Medidores de deformación
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item-2 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/Caracterización Físico-mecánica y Microestructural de Materiales/Conductividad.jpg"
+                                width="169" height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Medidor digital de conductividad y pH:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - 1 Conductímetro Metrohm 712 con un rango de medida de 0-2000µS/cm y
+                                    temperatura:
+                                    -170-500°C. Rango del electrodo 1.0-100mS/cm.
+                                </p>
+                                <p>
+                                    - 1 Conductímetro Orion3-Star de Thermo Electron con un rango de medida
+                                    0-5000mS/cm
+                                    dependiendo de la constante de celda.
+                                </p>
+                                <p>
+                                    - 1 pHmetro SevenGo de Mettler con un rango de pH de 0 a 14
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item-2 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/Caracterización Físico-mecánica y Microestructural de Materiales/Viscosimetro.jpg"
+                                width="169" height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Viscosímetro:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - Viscosímetro Brookfield modelo DV-II+Pro
+                                </p>
+                                <p>
+                                    - Rango: 0.01-200 rpm
+                                </p>
+                                <p>
+                                    - Incrementos de 0.01 rpm desde 0.01 a 0.99 rpm y de 0.1 desde 1.0 a 200 rpm.
+                                </p>
+                                <p>
+                                    18 velocidades y 54 programables
+                                </p>
+                                <p>
+                                    Juego de 8 spindles
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Botones de Navegación -->
+        <button onclick="updateCarousel('prevBtn','2')" id="prevBtn"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟨</button>
+        <button onclick="updateCarousel('nextBtn','2')" id="nextBtn"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟩</button>
+    </div>
+</div>
+
+<div class="container mx-auto py-2" onclick="toggleMenu(this)">
+    <div
+        class="w-full mb-4 bg-gray-200 border border-gray-300 hover:bg-gray-300 hover:border-yellow-200 cursor-pointer">
+        <h2 class="text-red-700 text-center text-lg font-bold">
+            Producción y Caracterización de Morteros, Concretos y otros Materiales
+        </h2>
+    </div>
+    <div class=" relative overflow-hidden" onclick="event.stopPropagation()">
+        <!-- Carrusel Contenedor -->
+        <div id="menu" class=" hidden transition-all duration-500 ease-in-out overflow-hidden">
+            <div id="carousel-3" class="flex w-full transition-transform duration-500">
+                <!-- Slide 1 -->
+                <div class="carousel-item-3 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center items-center">
+                            <img src="/img/laboratorios/Producción y caracterización de morteros, concretos y otros materiales/Mezcladora.jpg"
+                                width="169" height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Mezcladoras de Mortero:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - 2 Mezcladoras de mortero Hobart modelo N50 (Capacidad: 5L)
+                                </p>
+                                <p>
+                                    - 1 Mezcladora de mortero Thunder modelo CSM-A-200 (20L y 1/2hp)
+
+                                </p>
+                                <p>
+                                    - 1 Mezcladora de mortero automática de Zwick Roell ToniMix (4L)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item-3 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/Producción y caracterización de morteros, concretos y otros materiales/Calorimetro.jpg"
+                                width="169" height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Calorimetria isotérmica:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - Calorímetro I-Cal 8000 del Calmetrix
+                                </p>
+                                <p>
+                                    - 8 canales de lectura
+                                </p>
+                                <p>
+                                    - Control de temperatura 5-60°C
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item-3 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/Producción y caracterización de morteros, concretos y otros materiales/Blaine.jpg"
+                                width="169" height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Finura Blaine:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - Finura Blaine para cementos (ASTM C204-11 Standard test methods for fineness
+                                    of
+                                    hydraulic by air-permeability apparatus)
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item-3 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/Producción y caracterización de morteros, concretos y otros materiales/Vicat.jpg"
+                                width="169" height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Aguja de Vicat:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - Aguja de Vicat para determiar el tiempo de fraguado en cementos (ASTM C191-08
+                                    Standard test methods for time of setting of hydraulic cement by Vicat needle)
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item-3 w-full flex-shrink-0 ">
+                    <div class="grid grid-cols-5 gap-4 mx-6">
+                        <div class="col-span-2 flex justify-center	">
+                            <img src="/img/laboratorios/Producción y caracterización de morteros, concretos y otros materiales/Medidor_aire.jpg"
+                                width="169" height="219" />
+                        </div>
+                        <div class=" col-span-3 ">
+                            <h2 class="text-red-600 font-bold">
+                                Medidor del contenido de aire en mezclas de concreto en estado fresco:
+                            </h2>
+                            <div class="">
+                                <p>
+                                    - (ASTM C173/C173-12 Standard test method for air content of freshly mixed
+                                    concrete
+                                    by the volumetric method)
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botones de Navegación -->
+            <button onclick="updateCarousel('prevBtn','3')" id="prevBtn"
+                class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟨</button>
+            <button onclick="updateCarousel('nextBtn','3')" id="nextBtn"
+                class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟩</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="container mx-auto py-2 " onclick="toggleMenu(this)" >
+    <div class="w-full mb-4 bg-gray-200 border border-gray-300 hover:bg-gray-300 hover:border-yellow-200 cursor-pointer">
+        <h2 class="text-red-700 text-center text-lg font-bold">
+            Ensayos de corrosión y durabilidad
+        </h2>
+    </div>
+    <div class=" relative overflow-hidden" onclick="event.stopPropagation()">
+        <div id="menu" class="hidden transition-all duration-500 ease-in-out overflow-hidden">
+        
+        <!-- Carrusel Contenedor -->
+        <div id="carousel-4" class="flex w-full transition-transform duration-500">
+            <!-- Slide 1 -->
+            <div class="carousel-item-4 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center items-center">
+                        <img src="/img/laboratorios/Ensayos de corrosión y durabilidad/Permeabilimetro.jpg"
+                        width="259" height="259" />
+                    </div>
+                    <div class=" col-span-3 ">
+                        <h2 class="text-red-600 font-bold">
+                            Permeabilímetro de iones cloruro:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - 2 Permeabilímetros de iones cloruro Prove-it de German Instruments
+                            </p>
+                            <p>
+                                - Ensayo de difusión rápida de cloruros (ASTM C1202-12)
+                            </p>
+                            <p>
+                                - 8 canales de lectura
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item-4 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center	">
+                        <img src="/img/laboratorios/Ensayos de corrosión y durabilidad/Titulador_Cl.jpg" width="169"
+                            height="219" />
+                    </div>
+                    <div class=" col-span-3 ">
+                        <h2 class="text-red-600 font-bold">
+                            Titulador de cloruros:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - Titulador de cloruros de Schott modelo TA20Plus
+                            </p>
+                            <p>
+                                - Titulador de cloruros de Metrohm modelo 702 SM Titrino
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item-4 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center	">
+                        <img src="/img/laboratorios/Ensayos de corrosión y durabilidad/Carbonatacion.jpg"
+                            width="169" height="219" />
+                    </div>
+                    <div class=" col-span-3 ">
+                        <h2 class="text-red-600 font-bold">
+                            Cámaras de carbonatación:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - Cámara de carbonatación de DiES con control de temperatura (5-50°C), humedad
+                                relativa (30-80%) y concentración de CO2 (1-10%).
+                            </p>
+                            <p>
+                                - Cámara de carbonatación de Binder modelo KBF 240UL con control de temperatura
+                                (10-70°C), humedad relativa (10-80%) y concentración de CO2 (1-10%)
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item-4 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center	">
+                        <img src="/img/laboratorios/Ensayos de corrosión y durabilidad/corrosion1.jpg" width="259"
+                            height="259" />
+                    </div>
+                    <div class=" col-span-3 ">
+                        <h2 class="text-red-600 font-bold">
+                            Potenciostato galvanostato:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - Potenciostato galvanostato EG&G-PARC modelo 273A
+                            </p>
+                            <p>
+                                - Rango de corriente: 1 a 100nA
+                            </p>
+                            <p>
+                                - Rango de potencial: ± 8V
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item-4 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center	">
+                        <img src="/img/laboratorios/Ensayos de corrosión y durabilidad/corrosion3.jpg" width="259"
+                            height="259" />
+                    </div>
+                    <div class=" col-span-3 ">
+                        <h2 class="text-red-600 font-bold">
+                            Potenciostato galvanostato con modulo de impedancia:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - Potenciostato galvanostato con modulo de impedancia FRA2 de Autolab modelo
+                                PGSTAT128N
+                            </p>
+                            <p>
+                                - Rango de corriente: 1A a 10 nA
+                            </p>
+                            <p>
+                                - Rango de potencial: ± 10V
+                            </p>
+                            <p>
+                                - Modulo de impedancia con un rango de frecuencia 10 µHz a 1 MHz y resolución de
+                                frecuencia de 0.003%
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Botones de Navegación -->
+        <button onclick="updateCarousel('prevBtn','4')" id="prevBtn"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟨</button>
+        <button onclick="updateCarousel('nextBtn','4')" id="nextBtn"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟩</button>
+    </div>
+</div>
+
+<div class="container mx-auto py-2 " onclick="toggleMenu(this)">
+    <div class="w-full mb-4 bg-gray-200 border border-gray-300 hover:bg-gray-300 hover:border-yellow-200 cursor-pointer">
+        <h2 class="text-red-700 text-center text-lg font-bold">
+            Laboratorio de polímeros
+        </h2>
+    </div>
+    <div class=" relative overflow-hidden" onclick="event.stopPropagation()">
+        <!-- Carrusel Contenedor -->
+         <div id="menu" class="hidden transition-all duration-500 ease-in-out overflow-hidden">
+
+         
+        <div id="carousel-5" class="flex w-full transition-transform duration-500">
+            <!-- Slide 1 -->
+            <div class="carousel-item-5 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center items-center">
+                        <img src="/img/laboratorios/Laboratorio de Polímeros/HDVT.jpg" width="259" height="259" />
+                    </div>
+                    <div class=" col-span-3 ">
+                        <h2 class="text-red-600 font-bold">
+                            HDVT:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - HDVT y Vicat XRW-300 tipo tabla
+                            </p>
+                            <p>
+                                - Control de temperatura desde temperatura ambiente a 300 °C
+                            </p>
+                            <p>
+                                - Rango de medidas de deformación de 0 a 1.5 mm
+                            </p>
+                            <p>
+                                - Rango de carga 43 g a 5 kg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item-5 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center	">
+                        <img src="/img/laboratorios/Laboratorio de Polímeros/oxigeno.jpg" width="169"
+                            height="219" />
+                    </div>
+                    <div class=" col-span-3 ">
+                        <h2 class="text-red-600 font-bold">
+                            Indice de oxígeno:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - Medidor de índice de oxígeno para plásticos y otros materiales mediante el
+                                procedimiento sugerido por la norma ASTM D2863.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item-5 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center	">
+                        <img src="/img/laboratorios/Laboratorio de Polímeros/Impacto.jpg" width="169"
+                            height="219" />
+                    </div>
+                    <div class=" col-span-3 ">
+                        <h2 class="text-red-600 font-bold">
+                            Maquina de Impacto:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - Maquina de impacto IT504 pendulum de Tinius Olsen para la realización de pruebas
+                                de acuerdo a la normativa ASTM D256, ISO180 (impacto izod), ASTM D4812, ISO179
+                                (impacto Charpy) y ASTM D4508 (Impacto Chip).
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item-5 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center	">
+                        <img src="/img/laboratorios/Laboratorio de Polímeros/Abrasimetro.jpg" width="259"
+                            height="259" />
+                    </div>
+                    <div class=" col-span-3 ">
+                        <h2 class="text-red-600 font-bold">
+                            Abrasímetro:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - Abrasímetro ACA mod 655 para determinar el desgaste al frote de materiales
+                                plásticos y elastómeros siguiendo las normativas DIN 53516 y UNE 53527-97.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item-5 w-full flex-shrink-0 ">
+                <div class="grid grid-cols-5 gap-4 mx-6">
+                    <div class="col-span-2 flex justify-center	">
+                        <img src="/img/laboratorios/Laboratorio de Polímeros/Plastometro.jpg" width="130"
+                            height="130" />
+                    </div>
+                    <div class="col-span-3  ">
+                        <h2 class="text-red-600 font-bold">
+                            Plastómetro:
+                        </h2>
+                        <div class="">
+                            <p>
+                                - Plastómetro de Tinius Olsen con microprocesador modelo MP600 conforme a las normas
+                                ASTM D1238, ISO1133, BS2782, DIN53735, JIS K7210, entre otras.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Botones de Navegación -->
+        <button onclick="updateCarousel('prevBtn','5')" id="prevBtn"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟨</button>
+        <button onclick="updateCarousel('nextBtn','5')" id="nextBtn"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-600">⟩</button>
+    </div>
+</div>
