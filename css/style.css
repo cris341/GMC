@@ -29,3 +29,43 @@
       height: 297px;
     }
   }
+
+  .custom-container-margin {
+    margin-left: 1.5rem;  /* mx-6 = 1.5rem */
+    margin-right: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .custom-container-margin {
+      margin-left: 3rem;   /* md:mx-12 = 3rem */
+      margin-right: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .custom-container-margin {
+      margin-left: 6rem;   /* lg:mx-24 = 6rem */
+      margin-right: 6rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .custom-container-margin {
+      margin-left: 8rem;   /* xl:mx-32 = 8rem */
+      margin-right: 8rem;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .custom-container-margin {
+      margin-left: 10rem;  /* 2xl:mx-40 = 10rem */
+      margin-right: 10rem;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    .custom-container-margin {
+      margin-left: 20rem;  
+      margin-right: 20rem;
+    }
+  }

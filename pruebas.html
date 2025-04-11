@@ -1,33 +1,116 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrusel con Tailwind y JavaScript</title>
-</head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
-    <div class="w-96 overflow-hidden relative">
-        <div id="carrusel" class="flex transition-transform duration-1000 ease-in-out">
-            <img src="https://picsum.photos/400/300?random=1" alt="Imagen 1" class="w-96 h-64 object-cover">
-            <img src="https://picsum.photos/400/300?random=2" alt="Imagen 2" class="w-96 h-64 object-cover">
-            <img src="https://picsum.photos/400/300?random=3" alt="Imagen 3" class="w-96 h-64 object-cover">
-            <img src="https://picsum.photos/400/300?random=4" alt="Imagen 4" class="w-96 h-64 object-cover">
+<p>La Escuela de Ingeniería de Materiales cuenta con Profesores altamente capacitados en sus áreas de estudio, este
+    equipo de docentes se divide en: profesores nombrados (titulares, asociados, etc) y profesores contratistas.</p>
+<p> </p>
+<h2>Docentes Nombrados</h2>
+<div class="row">
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico"
+            style="background-image: url('images/profesores/nombrados/Fernando_Franco_Arenas.jpg');"> </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h15slf8fjqrq1qx12r71cbez3p88dx2a" class="titulo-mosaico"><a style="color: white;"
+                    href="docentes-nombrados/fernando-arenas">Fernando Franco Arenas</a></h3>
         </div>
     </div>
-
-    <script>
-        // JavaScript para el carrusel
-        const carrusel = document.getElementById('carrusel');
-        const imagenes = carrusel.querySelectorAll('img');
-        let indiceActual = 0;
-
-        function moverCarrusel() {
-            indiceActual = (indiceActual + 1) % imagenes.length;
-            const offset = -indiceActual * 100;
-            carrusel.style.transform = `translateX(${offset}%)`;
-        }
-
-        setInterval(moverCarrusel, 5000); // Cambia de imagen cada 5 segundos
-    </script>
-</body>
-</html>
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico"
+            style="background-image: url('images/profesores/nombrados/Fred_Albn_Achinte_1.jpg');"> </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h48slf8fkizuow1ruxq0wf7arpdo7j" class="titulo-mosaico"><a style="color: white;"
+                    href="docentes-nombrados/fred-achinte">Fred Albán Achinte</a></h3>
+        </div>
+    </div>
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico"
+            style="background-image: url('images/profesores/nombrados/Jose_Herminsul_Mina_2.jpg');"> </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h152slf8fl58rpeezcvmlh02s69xeex" class="titulo-mosaico"><a style="color: white;"
+                    href="docentes-nombrados/jose-mina">Jose Herminsul Mina</a></h3>
+        </div>
+    </div>
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico"
+            style="background-image: url('images/profesores/nombrados/Julio_Cesar_Caicedo_2.jpg');"> </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h167slf8flggx5w05xz4jg5qnnjbw6b" class="titulo-mosaico"><a style="color: white;"
+                    href="docentes-nombrados/julio-cesar-caicedo">Julio Cesar Caicedo</a></h3>
+        </div>
+    </div>
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico"
+            style="background-image: url('images/profesores/nombrados/Mnica_Villaquirn_caicedo_2.jpg');"> </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h198slf8flpg9naq8ber8ys9hxe42oj" class="titulo-mosaico"><a style="color: white;"
+                    href="docentes-nombrados/monica-caicedo">Mónica Villaquirán caicedo</a></h3>
+        </div>
+    </div>
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico"
+            style="background-image: url('images/profesores/nombrados/Ruby_Meja_de_Gutirrez_1.jpg');"> </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h53sl5l757n5bz11or180g9yshex1cn" class="titulo-mosaico"><a style="color: white;"
+                    href="docentes-nombrados/ruby-mejia-gutierrez">Ruby Mejía de Gutiérrez</a></h3>
+        </div>
+    </div>
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico"
+            style="background-image: url('images/profesores/nombrados/Yesid_Aguilar_Castro_2.jpg');"> </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h233slf8fmeq31fx0myeaayn5f1o2gznw" class="titulo-mosaico"><a style="color: white;"
+                    href="docentes-nombrados/yesid-castro">Yesid Aguilar Castro</a></h3>
+        </div>
+    </div>
+    <!-- NUevos profesores -->
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico" style="background-image: url('images/profesores/nombrados/Adriana_Esguerra.jpg');"> 
+        </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h233slf8fmeq31fx0myeaayn5f1o2gznw" class="titulo-mosaico"><a style="color: white;"
+                    href="docentes-nombrados/adriana-esguerra-arce">Adriana Esguerra Arce</a></h3>
+        </div>
+    </div>
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico" style="background-image: url('images/profesores/nombrados/Rafael.jpg');"> </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h233slf8fmeq31fx0myeaayn5f1o2gznw" class="titulo-mosaico"><a style="color: white;"
+                    href="docentes-nombrados/rafael-andres-robayo-salaza">Rafael Andres Robayo Salazar</a></h3>
+        </div>
+    </div>
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico" style="background-image: url('images/profesores/nombrados/William_Valencia.jpg');"> 
+        </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3 id="h233slf8fmeq31fx0myeaayn5f1o2gznw" class="titulo-mosaico"><a style="color: white;">William
+                    Valencia</a></h3>
+        </div>
+    </div>
+    <div class="columna contenedor-mosaico contenedor-mosaico-profesor">
+        <div class="imagen-mosaico" style="background-image: url('images/profesores/nombrados/Mario_Munoz.jpg');"> 
+        </div>
+        <div class="contenedor-titulo-mosaico">
+            <h3  class="titulo-mosaico"><a style="color: white;" href="docentes-nombrados/mario-fernando-munoz">Mario Fernando Muñoz</a>
+            </h3>
+        </div>
+    </div>
+</div>
+<h2>Docentes Contratistas</h2>
+<ul>
+    <li>William Barona Mercado</li>
+    <li>Mario Muñoz.</li>
+    <li>Carlos Hugo Vidal Bolaños</li>
+    <li>Gloria Stella Ramirez</li>
+    <li>Vivian andrea Perdomo Diaz</li>
+    <li>William Valencia</li>
+    <li>Ernesto David González Cruz</li>
+    <li>Rafael Andres Robayo</li>
+    <li>Maria Isabel Mejia Villareal</li>
+    <li>Ana Maria Aguirre Guerrero</li>
+</ul>
+<h2>Asistentes de Docencia</h2>
+<ul>
+    <li>Gustavo Adolfo Acevedo Zapata</li>
+    <li>Nicolas Martinez</li>
+    <li>Lina Marcela Ruiz</li>
+    <li>Juan Jose Vasquez.</li>
+</ul>
+<p> </p>
+<p>Volver al <a href="index.php?option=com_content&amp;view=article&amp;id=1&amp;catid=2">Inicio</a></p>
